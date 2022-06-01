@@ -5199,7 +5199,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh35054
+  m_Name: pb_Mesh23024
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5448,9 +5448,7 @@ MonoBehaviour:
   cameraSwitch: {fileID: 2140564482}
   keysCounter: 0
   keysTotal: 0
-  doorLight: {fileID: 6866318950994975825}
-  redLight: {fileID: 2100000, guid: 274564bf2c02ea248ac32ab1a375a49d, type: 2}
-  greenLight: {fileID: 2100000, guid: 2290823e8fcf9204299c84f943285d2d, type: 2}
+  g: 2
 --- !u!95 &878802533
 Animator:
   serializedVersion: 3
@@ -5706,7 +5704,7 @@ Transform:
   m_Children:
   - {fileID: 878802535}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1064143856 stripped
 GameObject:
@@ -9207,8 +9205,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91bcfcf38f881564c8cb5da0c7f494d9, type: 3}
---- !u!1 &6866318950994975825 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8923982261179235657, guid: 91bcfcf38f881564c8cb5da0c7f494d9, type: 3}
-  m_PrefabInstance: {fileID: 2635250238497956120}
-  m_PrefabAsset: {fileID: 0}

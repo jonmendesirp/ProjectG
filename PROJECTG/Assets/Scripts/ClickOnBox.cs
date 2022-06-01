@@ -8,7 +8,7 @@ public class ClickOnBox : MonoBehaviour
     private Rigidbody gravBox;
     private float g;
     private bool objectReverseGravity;
-    public Collider coll;
+    private Collider coll;
     public Player playerScript;
 
     void Start()
