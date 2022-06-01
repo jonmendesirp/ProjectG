@@ -15,9 +15,12 @@ EditorUserSettings:
       value: 22424703114646680e0b0227036c73150012147a7e66777e38271427fb
       flags: 0
     RecentlyUsedScenePath-3:
+<<<<<<< Updated upstream
       value: 22424703114646680e0b0227036c73150012140f7c7a6661633c133af6f9
       flags: 0
     RecentlyUsedScenePath-4:
+=======
+>>>>>>> Stashed changes
       value: 22424703114646680e0b0227036c73150012140f7c7a68252320092a
       flags: 0
     UnityEditor.ShaderGraph.Blackboard:
