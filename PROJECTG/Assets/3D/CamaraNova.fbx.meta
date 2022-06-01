@@ -38,7 +38,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: RolhaMat
-    second: {fileID: 2100000, guid: 589cbc6607ff7384c8eb459ab4c488d1, type: 2}
+    second: {fileID: 2100000, guid: ff64918a1532b074381d53efd4ae5b77, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
