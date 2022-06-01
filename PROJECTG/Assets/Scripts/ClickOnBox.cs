@@ -5,10 +5,10 @@ using UnityEngine;
 public class ClickOnBox : MonoBehaviour
 {
  
-    public Rigidbody gravBox;
+    private Rigidbody gravBox;
     private float g;
     private bool objectReverseGravity;
-
+    public Collider coll;
     public Player playerScript;
 
     void Start()
@@ -16,6 +16,7 @@ public class ClickOnBox : MonoBehaviour
         g = 2f;
         objectReverseGravity = false;
         gravBox = GetComponent<Rigidbody>();
+        coll = GetComponent<Collider>();
     }
 
     void Update()
@@ -25,7 +26,7 @@ public class ClickOnBox : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, 100.0f))
+            if (coll.Raycast(ray, out hit, 100.0f))
             {
                 if (hit.transform != null)
                 {
