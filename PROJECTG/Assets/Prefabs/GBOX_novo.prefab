@@ -345,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c2ce7987140b14abfb0f699db8574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coll: {fileID: 0}
   playerScript: {fileID: 0}
 --- !u!114 &4568069281209495626
 MonoBehaviour:
@@ -374,5 +375,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
-  m_Center: {x: 0.49999997, y: 0.49999997, z: -0.49999997}
+  m_Size: {x: 0.9999999, y: 1.4278283, z: 1.5617464}
+  m_Center: {x: 0.49999994, y: 0.42891416, z: -0.57002753}
