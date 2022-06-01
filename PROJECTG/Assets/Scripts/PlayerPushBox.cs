@@ -17,4 +17,16 @@ public class PlayerPushBox : MonoBehaviour
             rb.AddForceAtPosition(forceDirection * forceMagnitude * 2, transform.position, ForceMode.Impulse);
         }
     }
+    void OnCollisionStay(Collision col)
+    {
+        Rigidbody rb = col.collider.attachedRigidbody;
+
+        if(col.gameObject.tag == "gBox"){
+            Vector3 forceDirection = col.gameObject.transform.position - transform.position;
+            forceDirection.y = 0;
+            forceDirection.Normalize();
+
+            rb.AddForceAtPosition(forceDirection * forceMagnitude * 0.2f, transform.position, ForceMode.Impulse);
+        }
+    }
 }

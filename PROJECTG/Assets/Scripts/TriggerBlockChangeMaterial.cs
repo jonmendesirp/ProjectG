@@ -8,7 +8,7 @@ public class TriggerBlockChangeMaterial : MonoBehaviour
     public Material OnTrg;
     public Material OffTrg;
 
-    void OnTriggerEnter(Collider col){
+    void OnTriggerStay(Collider col){
         this.GetComponent<MeshRenderer>().material = OnTrg;
     }
     void OnTriggerExit(Collider col){
