@@ -163,6 +163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamaraNova
       objectReference: {fileID: 0}
+    - target: {fileID: 7071182760956848314, guid: 48552887a2c7cf34b901598324827964, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a7d50164ead9da14990005cf4bdf2510, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48552887a2c7cf34b901598324827964, type: 3}
 --- !u!4 &6517685265867391851 stripped

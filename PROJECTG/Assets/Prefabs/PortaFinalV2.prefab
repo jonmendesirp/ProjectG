@@ -102,7 +102,7 @@ PrefabInstance:
     - target: {fileID: -1117441373237535935, guid: dcdf64bfdcd909a4daa581e0ca132d21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ddbcc52b6017c7341853ad7282097ffa, type: 2}
+      objectReference: {fileID: 2100000, guid: 51592ec66c7e6724fa03929be05ea1b9, type: 2}
     - target: {fileID: 919132149155446097, guid: dcdf64bfdcd909a4daa581e0ca132d21, type: 3}
       propertyPath: m_Name
       value: PortaV2
@@ -110,11 +110,11 @@ PrefabInstance:
     - target: {fileID: 2308447301408295623, guid: dcdf64bfdcd909a4daa581e0ca132d21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ddbcc52b6017c7341853ad7282097ffa, type: 2}
+      objectReference: {fileID: 2100000, guid: 51592ec66c7e6724fa03929be05ea1b9, type: 2}
     - target: {fileID: 4346766228695573795, guid: dcdf64bfdcd909a4daa581e0ca132d21, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4fa1819776ff429429648d7e646c0765, type: 2}
+      objectReference: {fileID: 2100000, guid: b468d2a4849028148a3ea6329d1112a2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcdf64bfdcd909a4daa581e0ca132d21, type: 3}
 --- !u!1 &1923869619329636223 stripped
