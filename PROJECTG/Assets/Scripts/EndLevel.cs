@@ -6,15 +6,15 @@ using UnityEngine.UI;
 
 public class EndLevel : MonoBehaviour
 {
-    public Animation anim; 
+    private Animator anim; 
     public Player playerScript;
     public Text levelCompleteText;
     public bool levelComplete;
 
     void Start()
     {
-        anim = GetComponent<Animation>();
-
+        anim = GetComponent<Animator>();
+        anim.SetBool("Abrir", false);
         levelCompleteText.gameObject.SetActive(false);
         levelComplete = false;
         levelCompleteText.text = "Level Complete!\n Press ESC to go to the next level!";
@@ -22,13 +22,16 @@ public class EndLevel : MonoBehaviour
 
     void Update()
     {
-
+        if (playerScript.allKeysColected)
+        {
+            anim.SetBool("Abrir", true);
+        }
     }
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player" && playerScript.allKeysColected)
         {
-            anim.Play("Abrir_Portas");
+            
             playerScript.cameraSwitch.controlScheme = 0;
             levelCompleteText.gameObject.SetActive(true);
             levelComplete = true;
