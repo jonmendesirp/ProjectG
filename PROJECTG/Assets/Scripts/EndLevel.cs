@@ -14,7 +14,7 @@ public class EndLevel : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        anim.SetBool("Abrir", false);
+        anim.SetBool("AbrirV2", false);
         levelCompleteText.gameObject.SetActive(false);
         levelComplete = false;
         levelCompleteText.text = "Level Complete!\n Press ESC to go to the next level!";
@@ -24,7 +24,7 @@ public class EndLevel : MonoBehaviour
     {
         if (playerScript.allKeysColected)
         {
-            anim.SetBool("Abrir", true);
+            anim.SetBool("AbrirV2", true);
         }
     }
     void OnTriggerEnter(Collider other)
