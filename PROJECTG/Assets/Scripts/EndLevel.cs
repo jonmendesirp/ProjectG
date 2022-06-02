@@ -13,7 +13,7 @@ public class EndLevel : MonoBehaviour
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         anim.SetBool("AbrirV2", false);
         levelCompleteText.gameObject.SetActive(false);
         levelComplete = false;
