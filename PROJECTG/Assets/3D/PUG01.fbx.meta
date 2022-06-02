@@ -10,6 +10,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: FUCINHO_MAT
+    second: {fileID: 2100000, guid: 0e3c32a0c26af3044adb8b50e64c4959, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PUG_Mat
+    second: {fileID: 2100000, guid: 47e1c6f91406cc74699f113d819fde38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Ventuinha_Mat
     second: {fileID: 2100000, guid: c3f488dc9c5f1be47aa08922fc740290, type: 2}
   materials:

@@ -50,13 +50,22 @@ public class Player : MonoBehaviour
         keysText = GameObject.Find("Canvas/Keys").GetComponent<Text>();
 
         cooldownText.text = "Use Gravity";
-        keysText.text = "Keys: 0/" + keysTotal;
+
+        if (keysTotal >= 1)
+        {
+            keysText.text = "Keys: 0/" + keysTotal;
+        }
+        else if (keysTotal == 0)
+        {
+            keysText.text = " ";
+        }
+
 
     }
 
     void Update()
     {
-        this.transform.localScale = new Vector3 (1, 1, 1); 
+        this.transform.localScale = new Vector3(1, 1, 1);
 
         if (isDead == false)
         {
@@ -99,16 +108,17 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if(keysCounter == keysTotal){
+        if (keysCounter == keysTotal)
+        {
             allKeysColected = true;
         }
 
-        TextChange();
+        GravityTextChange();
         rb.AddForce(g * Physics.gravity, ForceMode.Acceleration);
 
     }
 
-    void TextChange()
+    void GravityTextChange()
     {
         if (onCool == false)
         {
@@ -169,7 +179,7 @@ public class Player : MonoBehaviour
             controlador.SetBool("Walk", false);
         }
 
-            if (reverseGravity == false)
+        if (reverseGravity == false)
         {
             if (movementDirection != Vector3.zero)
             {
@@ -194,14 +204,14 @@ public class Player : MonoBehaviour
                 if (reverseGravity == true)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = false;
                 }
                 else if (reverseGravity == false)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = true;
                 }
@@ -259,14 +269,14 @@ public class Player : MonoBehaviour
                 if (reverseGravity == true)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = false;
                 }
                 else if (reverseGravity == false)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = true;
                 }
@@ -324,14 +334,14 @@ public class Player : MonoBehaviour
                 if (reverseGravity == true)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = false;
                 }
                 else if (reverseGravity == false)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = true;
                 }
@@ -386,14 +396,14 @@ public class Player : MonoBehaviour
                 if (reverseGravity == true)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = false;
                 }
                 else if (reverseGravity == false)
                 {
                     g = -g;
-                    TextChange();
+                    GravityTextChange();
                     StartCoroutine(Rotate(yAngle));
                     reverseGravity = true;
                 }
@@ -444,9 +454,10 @@ public class Player : MonoBehaviour
     }
 
 
-    IEnumerator WaitToSetJumpAsFalse(){
+    IEnumerator WaitToSetJumpAsFalse()
+    {
         yield return new WaitForSeconds(0.8f);
         controlador.SetBool("Jump", false);
     }
-    
+
 }
