@@ -19,8 +19,8 @@ public class TriggerE2_2 : MonoBehaviour
         
         to2.transform.position = to2StartingPosition;
 
-        to3FinalPosition = new Vector3(20.31829f, -0.79f, -58.11f);
-        to3StartingPosition = new Vector3(20.31829f, -0.799f, -70.96f);
+        to3FinalPosition = new Vector3(29.39f, -2.66f, -54.56f);
+        to3StartingPosition = new Vector3(19.81f, -0.31f, -65.19f);
         to3.transform.position = to3StartingPosition;
     }
 
