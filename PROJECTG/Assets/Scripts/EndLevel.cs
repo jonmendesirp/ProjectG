@@ -24,7 +24,7 @@ public class EndLevel : MonoBehaviour
     {
         if (playerScript.allKeysColected)
         {
-            anim.SetBool("AbrirV2", true);
+            anim.SetBool("Abrir", true);
         }
     }
     void OnTriggerEnter(Collider other)
