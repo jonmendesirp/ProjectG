@@ -2215,7 +2215,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-16200
+  m_Name: pb_Mesh-79352
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5906,6 +5906,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -3173887220094266614, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3173887220094266614, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 009642e51a73791419156cc64686e525, type: 2}
@@ -5993,7 +5997,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: final 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3173887220094266614, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
 --- !u!1 &597462112
 GameObject:

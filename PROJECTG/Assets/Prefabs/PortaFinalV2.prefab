@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7956992905609558596}
+  - component: {fileID: 2187594129346474142}
   m_Layer: 0
   m_Name: PortaFinalV2
   m_TagString: Untagged
@@ -32,6 +33,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &2187594129346474142
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4198298576489204145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 009642e51a73791419156cc64686e525, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1617809211977247278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -127,7 +147,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dcdf64bfdcd909a4daa581e0ca132d21, type: 3}
   m_PrefabInstance: {fileID: 1617809211977247278}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1617809212361742249
+--- !u!95 &3363929391882407996
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -137,7 +157,7 @@ Animator:
   m_GameObject: {fileID: 1923869619329636223}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a09dc8a65fb920049a40573a5592fb04, type: 2}
+  m_Controller: {fileID: 9100000, guid: 009642e51a73791419156cc64686e525, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
