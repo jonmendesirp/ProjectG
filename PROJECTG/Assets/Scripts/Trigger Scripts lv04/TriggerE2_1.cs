@@ -13,7 +13,7 @@ public class TriggerE2_1 : MonoBehaviour
     {
         to1 = GameObject.Find("to.1");
 
-        to1FinalPosition = new Vector3(14.27f, -0.81f, -66.56f);
+        to1FinalPosition = new Vector3(13.73f, -0.3f, -60.84f);
         to1startingPosition = new Vector3(13.38f, 4.89f, -72.72f); 
 
         to1.transform.position = to1startingPosition;
