@@ -14,7 +14,7 @@ public class EndLevel : MonoBehaviour
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
-        anim.SetBool("AbrirV2", false);
+        anim.SetBool("Abrir", false);
         levelCompleteText.gameObject.SetActive(false);
         levelComplete = false;
         levelCompleteText.text = "Level Complete!\n Press ESC to go to the next level!";
