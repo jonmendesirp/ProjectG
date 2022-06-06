@@ -8605,8 +8605,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 240
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0, y: 1, z: 0}
+      m_Extent: {x: 1, y: 1, z: 1}
   m_Shapes:
     vertices: []
     shapes: []
@@ -18871,7 +18871,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b4e80b13a1db93c4086e3c3956d36b73, type: 2}
+  - {fileID: 2100000, guid: 15cfd3282ccc53c4e998c7939729786f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24096,7 +24096,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 26.5
+  orthographic size: 20.74
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -24119,13 +24119,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2029106286}
-  m_LocalRotation: {x: 0.27974284, y: 0.21336292, z: -0.03983608, w: 0.9352184}
-  m_LocalPosition: {x: 35.1, y: 35.9, z: -74.49}
-  m_LocalScale: {x: 2.8926182, y: 1.5374, z: 1.5374}
+  m_LocalRotation: {x: 0.1579416, y: 0.25251073, z: -0.03387066, w: 0.9540155}
+  m_LocalPosition: {x: 11.3, y: 33, z: -105.7}
+  m_LocalScale: {x: 3.5258121, y: 15.6, z: 4.55}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 32.7, y: 26.6, z: 3.056}
+  m_LocalEulerAnglesHint: {x: 18.57, y: 29.8, z: 0.915}
 --- !u!1 &2036115497
 GameObject:
   m_ObjectHideFlags: 0
@@ -24187,7 +24187,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b4e80b13a1db93c4086e3c3956d36b73, type: 2}
+  - {fileID: 2100000, guid: 15cfd3282ccc53c4e998c7939729786f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27927,8 +27927,8 @@ Mesh:
     firstVertex: 0
     vertexCount: 240
     localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
+      m_Center: {x: 0, y: 1, z: 0}
+      m_Extent: {x: 1, y: 1, z: 1}
   m_Shapes:
     vertices: []
     shapes: []
