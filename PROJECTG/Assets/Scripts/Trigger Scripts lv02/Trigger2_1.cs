@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trigger1 : MonoBehaviour
+public class Trigger2_1 : MonoBehaviour
 {
     public GameObject to1;
     Vector3 to1FinalPosition, to1startingPosition;
