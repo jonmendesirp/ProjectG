@@ -19,7 +19,9 @@ public class Player : MonoBehaviour
     public int keysCounter = 0;
     public int keysTotal;
     public float g = 2f;
+    public bool isOnArea = false;
 
+    
     Text cooldownText;
     Text keysText;
     Rigidbody rb;
@@ -65,6 +67,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
         this.transform.localScale = new Vector3(1, 1, 1);
 
         if (isDead == false)
@@ -417,10 +420,16 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if ((other.gameObject.tag == "Death" || other.gameObject.tag == "Enemy") && !isDead) //Death
+        if (other.gameObject.tag == "Death" && !isDead) //Death
         {
             //print("Game Over");
             cameraSwitch.controlScheme = 0; //lock the controls
+            isDead = true;
+        }
+
+        else if (other.gameObject.tag == "Enemy" && !isDead)
+        {
+            cameraSwitch.controlScheme = 0;
             isDead = true;
         }
 
@@ -429,6 +438,11 @@ public class Player : MonoBehaviour
             keysCounter++;
             keysText.text = $"Keys: {keysCounter}/" + keysTotal;
             other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.tag == "Area") //Area
+        {
+            isOnArea = true;
         }
 
         if (other.gameObject.tag == "Camera")
@@ -453,6 +467,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    void OnTriggerExit(Collider other){
+            isOnArea = false;
+    }
 
     IEnumerator WaitToSetJumpAsFalse()
     {
