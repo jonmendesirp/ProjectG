@@ -417,7 +417,7 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Death" && !isDead) //Death
+        if ((other.gameObject.tag == "Death" || other.gameObject.tag == "Enemy") && !isDead) //Death
         {
             //print("Game Over");
             cameraSwitch.controlScheme = 0; //lock the controls
