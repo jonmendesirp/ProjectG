@@ -8,30 +8,37 @@ public class Enemy : MonoBehaviour
 
     NavMeshAgent agent;
     Transform target;
-
-    public bool playerIsOnArea = false;
+    [SerializeField] Player playerScript;
     Vector3 randomLook;
+    Quaternion randomPosition;
+
+    private float speed = 5f;
 
     void Start()
     {
+        
         agent = GetComponent<NavMeshAgent>();
-        target = GameObject.FindGameObjectWithTag("Player").transform;
-        randomLook = new Vector3(Random.Range(0, 200), Random.Range(0, 200), Random.Range(0, 200));
+        randomLook = new Vector3(Random.Range(0, 200), 0, Random.Range(0, 200));
+        randomPosition = Quaternion.LookRotation(randomLook - transform.position);
     }
 
 
     void Update()
     {
-        if (playerIsOnArea)
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        var targetRotation = Quaternion.LookRotation(target.position - transform.position);
+        if (playerScript.isOnArea)
         {
-            transform.LookAt(target);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, speed * Time.deltaTime);
+            agent.destination = target.position;
         }
         else
         {
-            transform.LookAt(randomLook);
+            transform.rotation = Quaternion.Slerp(transform.rotation, randomPosition, speed * Time.deltaTime);
+            agent.destination = transform.position;
         }
 
-        agent.destination = target.position;
+        
 
     }
 }

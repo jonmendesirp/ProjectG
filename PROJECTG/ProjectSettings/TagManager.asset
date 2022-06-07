@@ -15,6 +15,7 @@ TagManager:
   - Camera4
   - Camera3
   - Enemy
+  - Area
   layers:
   - Default
   - TransparentFX
