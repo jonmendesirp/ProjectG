@@ -7,7 +7,7 @@ public class Trigger5_2 : MonoBehaviour
     GameObject to2, to3;
     Vector3 to2FinalPosition, to2StartingPosition, to3FinalPosition, to3StartingPosition;
     Vector3 to3FinalRotation, to3StartingRotation;
-    private float speed = 32f;
+    private float speed = 12f;
     private float rotationSpeed = 64f;
     private bool trg = false;
 
