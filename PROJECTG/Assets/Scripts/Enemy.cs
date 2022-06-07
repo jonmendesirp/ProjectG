@@ -7,7 +7,9 @@ public class Enemy : MonoBehaviour
 {
     
     NavMeshAgent agent; 
-    Transform target; 
+    Transform target;
+
+    public bool playerIsOnArea = false; 
 
     void Start()
     {
@@ -18,7 +20,9 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        if(playerIsOnArea) transform.LookAt(target);
+        else transform.LookAt(new Vector3(Random.Range(0, 200), Random.Range(0, 200), Random.Range(0, 200)));
         agent.destination = target.position;
-        transform.LookAt(target);
+        
     }
 }
