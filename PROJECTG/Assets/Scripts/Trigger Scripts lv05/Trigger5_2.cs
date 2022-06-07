@@ -6,7 +6,9 @@ public class Trigger5_2 : MonoBehaviour
 {
     GameObject to2, to3;
     Vector3 to2FinalPosition, to2StartingPosition, to3FinalPosition, to3StartingPosition;
+    Vector3 to3FinalRotation, to3StartingRotation;
     private float speed = 32f;
+    private float rotationSpeed = 64f;
     private bool trg = false;
 
     void Start()
@@ -21,6 +23,10 @@ public class Trigger5_2 : MonoBehaviour
 
         to3FinalPosition = new Vector3(14.81f, -1.048501f, -60.87f);
         to3StartingPosition = new Vector3(10.79441f, -1.048501f, -61.92212f);
+        to3StartingRotation = new Vector3(0.0f, 0f, 0.0f);
+        to3FinalRotation = new Vector3(0.0f, 90.0f, 0.0f);
+
+        
         to3.transform.position = to3StartingPosition;
     }
 
@@ -31,11 +37,13 @@ public class Trigger5_2 : MonoBehaviour
         {
             to2.transform.position = Vector3.MoveTowards(to2.transform.position, to2FinalPosition, speed * Time.deltaTime);
             to3.transform.position = Vector3.MoveTowards(to3.transform.position, to3FinalPosition, speed * Time.deltaTime);
+            to3.transform.eulerAngles = Vector3.MoveTowards(to3.transform.eulerAngles, to3FinalRotation, rotationSpeed * Time.deltaTime);
         }
         else if (!trg)
         {
             to2.transform.position = Vector3.MoveTowards(to2.transform.position, to2StartingPosition, speed * Time.deltaTime);
             to3.transform.position = Vector3.MoveTowards(to3.transform.position, to3StartingPosition, speed * Time.deltaTime);
+            to3.transform.eulerAngles = Vector3.MoveTowards(to3.transform.eulerAngles, to3StartingRotation, rotationSpeed * Time.deltaTime);
         }
         
     }
