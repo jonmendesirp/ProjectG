@@ -13324,7 +13324,7 @@ MonoBehaviour:
   reverseGravity: 0
   isDead: 0
   allKeysColected: 0
-  cameraSwitch: {fileID: 0}
+  cameraSwitch: {fileID: 2140564482}
   keysCounter: 0
   keysTotal: 0
   g: 2
@@ -18077,7 +18077,7 @@ PrefabInstance:
     - target: {fileID: 3361055110043231758, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
       propertyPath: playerScript
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 981037694}
     - target: {fileID: 3361055110043231758, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
       propertyPath: levelCompleteText
       value: 
