@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MaterialOffsetScroll : MonoBehaviour
 {
-    [SerializeField] private float speed = 0.5f;
+    [SerializeField] private float speed = -0.3f;
 
     void Update()
     {
