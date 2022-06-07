@@ -29,11 +29,12 @@ public class Trigger5_1 : MonoBehaviour
         if (trg == true)
         {
             to1.transform.position = Vector3.MoveTowards(to1.transform.position, to1FinalPosition, speed * Time.deltaTime);
-            to1.transform.Rotate(0.0f, 180.0f, 0.0f);
+            to1.transform.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
         }
         else if (trg == false)
         {
             to1.transform.position = Vector3.MoveTowards(to1.transform.position, to1startingPosition, speed * Time.deltaTime);
+            to1.transform.eulerAngles = new Vector3(0.0f, 0f, 0.0f);
         }
         
     }
