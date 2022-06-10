@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         agent = GetComponent<NavMeshAgent>();
         randomLook = new Vector3(Random.Range(0, 200), 0, Random.Range(0, 200));
         randomPosition = Quaternion.LookRotation(randomLook - transform.position);
