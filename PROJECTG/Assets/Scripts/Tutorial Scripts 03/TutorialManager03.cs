@@ -7,8 +7,8 @@ public class TutorialManager03 : MonoBehaviour
     public GameObject[] popUps;
     private int popUpIndex;
     public GameObject cone;
-    public Cone02 coneScript;
-    public TriggerScriptTUT02 trgScript;
+    public Cone03 coneScript;
+    public TriggerScriptTUT03 trgScript;
     Player playerScript;
     
     void Start(){
@@ -18,29 +18,23 @@ public class TutorialManager03 : MonoBehaviour
     }
     void Update() 
     {
-        if (popUpIndex == 0 && coneScript.check)
+        if (popUpIndex == 0 && trgScript.trg)
         {
             popUps[popUpIndex].SetActive(false);
             popUpIndex++;
-            cone.SetActive(false);
         }
-        else if (popUpIndex == 1)
-        {
+        else if(popUpIndex == 1){
             popUps[popUpIndex].SetActive(true);
-            if(playerScript.cameraSwitch.cam2Active && Input.GetKeyDown(KeyCode.Alpha2)){
+            if(coneScript.check == true){
+                cone.SetActive(false);
                 popUps[popUpIndex].SetActive(false);
                 popUpIndex++;
+                
             }
         }
         else if(popUpIndex == 2){
             popUps[popUpIndex].SetActive(true);
-            if(trgScript.trg){
-                popUps[popUpIndex].SetActive(false);
-                popUpIndex++;
-            }
-        }
-        else if(popUpIndex == 3){
-            popUps[popUpIndex].SetActive(true);
         }
     }
 }
+
