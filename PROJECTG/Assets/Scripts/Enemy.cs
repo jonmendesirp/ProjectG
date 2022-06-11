@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 
     NavMeshAgent agent;
     Transform target;
-    [SerializeField] Player playerScript;
+    Player playerScript;
     Vector3 randomLook;
     Quaternion randomPosition;
 

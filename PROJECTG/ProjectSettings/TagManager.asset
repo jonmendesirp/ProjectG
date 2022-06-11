@@ -16,6 +16,9 @@ TagManager:
   - Camera3
   - Enemy
   - Area
+  - End Trigger
+  - Ground
+  - TutorialCol
   layers:
   - Default
   - TransparentFX
