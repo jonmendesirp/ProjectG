@@ -73,7 +73,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6517685265867391851}
+  - {fileID: 5306338496821264594}
   m_Father: {fileID: 1284954420297378022}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -96,7 +96,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &6771656042249954432
+--- !u!1001 &5632138099451389753
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -121,15 +121,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48552887a2c7cf34b901598324827964, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0051422
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48552887a2c7cf34b901598324827964, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.07
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48552887a2c7cf34b901598324827964, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.027263
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48552887a2c7cf34b901598324827964, type: 3}
       propertyPath: m_LocalRotation.w
@@ -163,14 +163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CamaraNova
       objectReference: {fileID: 0}
-    - target: {fileID: 7071182760956848314, guid: 48552887a2c7cf34b901598324827964, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a7d50164ead9da14990005cf4bdf2510, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48552887a2c7cf34b901598324827964, type: 3}
---- !u!4 &6517685265867391851 stripped
+--- !u!4 &5306338496821264594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 48552887a2c7cf34b901598324827964, type: 3}
-  m_PrefabInstance: {fileID: 6771656042249954432}
+  m_PrefabInstance: {fileID: 5632138099451389753}
   m_PrefabAsset: {fileID: 0}

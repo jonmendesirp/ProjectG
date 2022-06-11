@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_backOut
+  m_Shader: {fileID: -6465566751694194690, guid: 3c1e6351c96329146a770f19d5c23d0c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_fd71dfdfcb04482d993277b5ec830369:
+        m_Texture: {fileID: 2800000, guid: 6220aea1bdc9b9542b9aceb66a373550, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_0b54f05abb7547bda5615fb6f59e79d5: 1
+    - Vector1_50a70929ceb84fb08a0d1393b6e555d3: 10
+    - Vector1_55eda8f2b7024b16b601f58083a0a01c: 25
+    m_Colors:
+    - Vector2_1367f9f287f04f53a4b9c9242d5e5cfe: {r: 0, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
