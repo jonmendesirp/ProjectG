@@ -25,18 +25,20 @@ public class ClickOnBox : MonoBehaviour
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+             
 
             if (coll.Raycast(ray, out hit, 100.0f))
             {
                 if (hit.transform != null)
                 {
-                    
+                   
                     Rigidbody rb;
                     if (rb = hit.transform.GetComponent<Rigidbody>())
                     {
                         if (rb.CompareTag("gBox"))
                         {
                             OnClick(rb);
+                           
                         }
                     }
                 }
@@ -44,7 +46,7 @@ public class ClickOnBox : MonoBehaviour
         }
 
         gravBox.AddForce(g * Physics.gravity, ForceMode.Acceleration);
-
+         
     }
 
     private void OnClick(Rigidbody rb)
@@ -64,6 +66,8 @@ public class ClickOnBox : MonoBehaviour
             objectReverseGravity = false;
             //print("2agora o reverse = " + objectReverseGravity);
         } 
+        
+
     }
 
     void OnTriggerEnter(Collider other)
