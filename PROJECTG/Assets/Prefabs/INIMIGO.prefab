@@ -4603,7 +4603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 031cce7e1cbc81c4092457d8bed592b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIsOnArea: 0
 --- !u!195 &6094204933354704423
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4650,8 +4649,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 27.352524, y: 45.779797, z: 42.730793}
-  m_Center: {x: 12.375679, y: 13.675806, z: -6.807258}
+  m_Size: {x: 21.1, y: 45.779797, z: 40.5}
+  m_Center: {x: 12, y: 13.675806, z: -6.807258}
 --- !u!1001 &252227340023413387
 PrefabInstance:
   m_ObjectHideFlags: 0

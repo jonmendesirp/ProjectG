@@ -24,12 +24,17 @@ public class Player : MonoBehaviour
     
     Text cooldownText;
     Text keysText;
+    Text coolText;
+    GameObject OnCool;
+    GameObject UseGrav;
     Rigidbody rb;
     Quaternion normalRotation;
     Quaternion reverseRotation;
 
 
     private float nextUseGravityTime = 0;
+     private float staticCooldownTime;
+    private float timeRemaining;
     private float startTime;
     private float rotationSpeed = 720;
     private bool isRotating = false;
@@ -37,21 +42,26 @@ public class Player : MonoBehaviour
     void Start()
     {
 
-
         rb = GetComponent<Rigidbody>();
         controlador = GetComponent<Animator>();
         transform.rotation = Quaternion.Euler(new Vector3(0, 90, 0));
 
-        keysTotal = GameObject.FindGameObjectsWithTag("Key").Length;
+        keysTotal = GameObject.FindGameObjectsWithTag("Key").Length;       
+
+        //cooldownText = GameObject.Find("Canvas/Gravity Text").GetComponent<Text>();
+        keysText = GameObject.Find("Canvas/Keys").GetComponent<Text>();
+
+        OnCool = GameObject.Find("Canvas/OnCool");
+        UseGrav = GameObject.Find("Canvas/UseGrav");
+        coolText = GameObject.Find("Canvas/coolText").GetComponent<Text>();
+        //cooldownText.text = "Use Gravity";
+
+        staticCooldownTime = cooldownTime;
+        timeRemaining = staticCooldownTime;
 
         reverseGravity = false;
         onCool = false;
         isDead = false;
-
-        cooldownText = GameObject.Find("Canvas/Gravity Text").GetComponent<Text>();
-        keysText = GameObject.Find("Canvas/Keys").GetComponent<Text>();
-
-        cooldownText.text = "Use Gravity";
 
         if (keysTotal >= 1)
         {
@@ -70,7 +80,7 @@ public class Player : MonoBehaviour
 
         this.transform.localScale = new Vector3(1, 1, 1);
 
-        if (isDead == false)
+        if (isDead == false) //esquema de controlo
         {
             if (cameraSwitch.controlScheme == 1)
             {
@@ -99,6 +109,8 @@ public class Player : MonoBehaviour
                 isRotating = true;
                 nextUseGravityTime = Time.time + cooldownTime;
                 StartCoroutine(WaitToSetJumpAsFalse());
+
+
             }
             else if (Time.time < nextUseGravityTime)
             {
@@ -125,12 +137,29 @@ public class Player : MonoBehaviour
     {
         if (onCool == false)
         {
-            cooldownText.text = "Use Gravity";
+            OnCool.SetActive(false);
+            UseGrav.SetActive(true);
+            //cooldownText.text = "Use Gravity";
+            timeRemaining = staticCooldownTime;
+            coolText.gameObject.SetActive(false);
         }
         else if (onCool == true)
         {
-            cooldownText.text = "On Cooldown";
+            OnCool.SetActive(true);
+            UseGrav.SetActive(false);
+
+            timeRemaining -= Time.deltaTime;
+            coolText.gameObject.SetActive(true);
+            DisplayTime(timeRemaining);
+            //cooldownText.text = "On Cooldown";
         }
+    }
+
+    void DisplayTime(float timeToDisplay){
+        //timeToDisplay += 1;
+        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
+        float milliseconds = (timeToDisplay % 1) * 1000;
+        coolText.text = string.Format("{0:0}:{1:000}", seconds, milliseconds);
     }
 
     IEnumerator Rotate(float yAngle)
