@@ -5,7 +5,6 @@ using UnityEngine;
 public class GeloCai : MonoBehaviour
 {
      private Animator anim;
-     public bool isOnPlataforma;
      public GameObject pilar;
 
     void Start()
