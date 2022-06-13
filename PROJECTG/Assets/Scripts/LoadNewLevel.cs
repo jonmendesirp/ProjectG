@@ -12,7 +12,7 @@ public class LoadNewLevel : MonoBehaviour
 //*** JÁ NÃO É NECESSÁRIO. OBRIGADO, GRIFU! :) ****
     void Update()
     {
-        if (endLevelScript.levelComplete && Input.GetKeyDown(KeyCode.Escape))
+        if (endLevelScript.levelComplete && Input.GetKeyDown(KeyCode.Return))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
         }

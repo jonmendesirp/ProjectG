@@ -18,7 +18,7 @@ public class IfDead : MonoBehaviour
     void Update(){
         if(playerScript.isDead == true){
             Time.timeScale = 0f;
-            gameOverText.text = "Game Over!\n Press ESC to Restart";
+            gameOverText.text = "Game Over!\n Press ENTER to Restart";
             gameOverText.gameObject.SetActive(true);
         }
     }
