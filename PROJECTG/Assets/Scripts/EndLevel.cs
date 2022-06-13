@@ -17,7 +17,7 @@ public class EndLevel : MonoBehaviour
         anim.SetBool("AbrirV2", false);
         levelCompleteText.gameObject.SetActive(false);
         levelComplete = false;
-        levelCompleteText.text = "Level Complete!\n Press ESC to go to the next level!";
+        levelCompleteText.text = "Level Complete!\n Press ENTER to go to the next level!";
     }
 
     void Update()
