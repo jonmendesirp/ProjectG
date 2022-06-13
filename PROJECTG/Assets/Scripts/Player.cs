@@ -118,7 +118,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (Input.GetKey("escape") && isDead)
+        if (Input.GetKey("return") && isDead)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
