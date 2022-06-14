@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
     public float g = 2f;
     public bool isOnArea = false;
 
+    public AudioSource gravidadeOn;
+    public AudioSource gravidadeOff;
+
     
     Text cooldownText;
     Text keysText;
@@ -131,6 +134,22 @@ public class Player : MonoBehaviour
         GravityTextChange();
         rb.AddForce(g * Physics.gravity, ForceMode.Acceleration);
 
+
+        if (Input.GetKey("space") && !isDead)
+        {
+            if (onCool == false)
+            {
+                if (reverseGravity == true)
+                {
+                    gravidadeOff.Play();
+                }
+
+                else if (reverseGravity == false)
+                {
+                    gravidadeOn.Play();
+                }
+            }
+        }
     }
 
     void GravityTextChange()
