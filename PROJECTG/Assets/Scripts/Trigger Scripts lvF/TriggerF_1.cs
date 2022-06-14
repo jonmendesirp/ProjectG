@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TriggerF_1 : MonoBehaviour
 {
-    GameObject to1, to2, to3;
-    Vector3 to1FinalPosition, to1StartingPosition, to2FinalPosition, to2StartingPosition, to3FinalPosition, to3StartingPosition;
+    GameObject to1, to3;
+    Vector3 to1FinalPosition, to1StartingPosition, to3FinalPosition, to3StartingPosition;
     //Vector3 to1FinalRotation, to1StartingRotation;
     private float speed = 10f;
     //private float rotationSpeed = 180f;
@@ -22,13 +22,6 @@ public class TriggerF_1 : MonoBehaviour
 
         to1.transform.position = to1StartingPosition;
 
-        to2 = GameObject.Find("to.2");
-
-        to2FinalPosition = new Vector3(7.34f, 10.29f, -82.47f);
-        to2StartingPosition = new Vector3(7.391678f, -2.05f, -63.00633f);
-
-        to2.transform.position = to2StartingPosition;
-
         to3 = GameObject.Find("to.3");
 
         to3FinalPosition = new Vector3(-3.983932f, 19f, -44.2f);
@@ -44,13 +37,11 @@ public class TriggerF_1 : MonoBehaviour
         if (trg == true)
         {
             to1.transform.position = Vector3.MoveTowards(to1.transform.position, to1FinalPosition, speed * Time.deltaTime);
-            to2.transform.position = Vector3.MoveTowards(to2.transform.position, to2FinalPosition, speed * Time.deltaTime);
             to3.transform.position = Vector3.MoveTowards(to3.transform.position, to3FinalPosition, speed * Time.deltaTime);
         }
         else if (trg == false)
         {
             to1.transform.position = Vector3.MoveTowards(to1.transform.position, to1StartingPosition, speed * Time.deltaTime);
-            to2.transform.position = Vector3.MoveTowards(to2.transform.position, to2StartingPosition, speed * Time.deltaTime);
             to3.transform.position = Vector3.MoveTowards(to3.transform.position, to3StartingPosition, speed * Time.deltaTime);
         }
         
