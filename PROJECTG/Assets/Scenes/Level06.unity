@@ -21950,6 +21950,7 @@ GameObject:
   - component: {fileID: 1564867480}
   - component: {fileID: 1564867479}
   - component: {fileID: 1564867481}
+  - component: {fileID: 1564867482}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -21998,6 +21999,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelScript: {fileID: 225611910}
+--- !u!81 &1564867482
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564867478}
+  m_Enabled: 1
 --- !u!4 &1565695307 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8885731895297163002, guid: e53082bcf1aa42244939c5b1a094b8cd, type: 3}
@@ -31895,6 +31904,10 @@ PrefabInstance:
       propertyPath: g
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: apanha
+      value: 
+      objectReference: {fileID: 1674099749}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: gravidadeOn
       value: 

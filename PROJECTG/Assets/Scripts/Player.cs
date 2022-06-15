@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
 
     public AudioSource gravidadeOn;
     public AudioSource gravidadeOff;
+    public AudioSource apanha;
 
     
     Text cooldownText;
@@ -486,6 +487,7 @@ public class Player : MonoBehaviour
             keysCounter++;
             keysText.text = $"Keys: {keysCounter}/" + keysTotal;
             other.gameObject.SetActive(false);
+            apanha.Play();
         }
 
         if (other.gameObject.tag == "Area") //Area
@@ -497,21 +499,25 @@ public class Player : MonoBehaviour
         {
             cameraSwitch.cam1Active = true;
             other.gameObject.SetActive(false);
+            apanha.Play();
         }
         else if (other.gameObject.tag == "Camera2")
         {
             cameraSwitch.cam2Active = true;
             other.gameObject.SetActive(false);
+            apanha.Play();
         }
         else if (other.gameObject.tag == "Camera3")
         {
             cameraSwitch.cam3Active = true;
             other.gameObject.SetActive(false);
+            apanha.Play();
         }
         else if (other.gameObject.tag == "Camera4")
         {
             cameraSwitch.cam4Active = true;
             other.gameObject.SetActive(false);
+            apanha.Play();
         }
     }
 

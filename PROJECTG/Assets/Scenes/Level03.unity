@@ -17989,6 +17989,11 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 3321329098131498167, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
   m_PrefabInstance: {fileID: 980596518}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &980596524 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099116450303, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 980596518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &992635732
 GameObject:
   m_ObjectHideFlags: 0
@@ -27128,6 +27133,7 @@ GameObject:
   - component: {fileID: 1564867480}
   - component: {fileID: 1564867479}
   - component: {fileID: 1564867481}
+  - component: {fileID: 1564867482}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -27176,6 +27182,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelScript: {fileID: 1726963716}
+--- !u!81 &1564867482
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564867478}
+  m_Enabled: 1
 --- !u!43 &1567747046
 Mesh:
   m_ObjectHideFlags: 0
@@ -34846,7 +34860,6 @@ GameObject:
   - component: {fileID: 2029106289}
   - component: {fileID: 2029106288}
   - component: {fileID: 2029106287}
-  - component: {fileID: 2029106290}
   m_Layer: 0
   m_Name: Camera (1)
   m_TagString: MainCamera
@@ -34944,14 +34957,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 21.46, y: 24.2, z: 0}
---- !u!81 &2029106290
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029106286}
-  m_Enabled: 1
 --- !u!43 &2040819087
 Mesh:
   m_ObjectHideFlags: 0
@@ -38205,6 +38210,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: apanha
+      value: 
+      objectReference: {fileID: 980596524}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: gravidadeOn
       value: 

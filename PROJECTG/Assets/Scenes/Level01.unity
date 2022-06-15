@@ -25428,6 +25428,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!82 &1494445357 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099116450303, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 3321329098138182822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1500360035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64343,6 +64348,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: apanha
+      value: 
+      objectReference: {fileID: 1494445357}
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: chaves
+      value: 
+      objectReference: {fileID: 1494445357}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: gravidadeOn
       value: 

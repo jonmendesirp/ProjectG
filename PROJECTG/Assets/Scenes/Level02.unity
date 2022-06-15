@@ -6622,6 +6622,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &381264733 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099116450303, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 276201126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &383657304
 Mesh:
   m_ObjectHideFlags: 0
@@ -34893,6 +34898,7 @@ GameObject:
   - component: {fileID: 1564867480}
   - component: {fileID: 1564867479}
   - component: {fileID: 1564867481}
+  - component: {fileID: 1564867482}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -34941,6 +34947,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelScript: {fileID: 225611910}
+--- !u!81 &1564867482
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564867478}
+  m_Enabled: 1
 --- !u!1 &1585103080
 GameObject:
   m_ObjectHideFlags: 0
@@ -44892,7 +44906,6 @@ GameObject:
   - component: {fileID: 2029106289}
   - component: {fileID: 2029106288}
   - component: {fileID: 2029106287}
-  - component: {fileID: 2029106290}
   m_Layer: 0
   m_Name: Camera (1)
   m_TagString: MainCamera
@@ -44990,14 +45003,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 18.962, y: 28.4, z: 0}
---- !u!81 &2029106290
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029106286}
-  m_Enabled: 1
 --- !u!43 &2049634556
 Mesh:
   m_ObjectHideFlags: 0
@@ -54860,6 +54865,10 @@ PrefabInstance:
       propertyPath: g
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: apanha
+      value: 
+      objectReference: {fileID: 381264733}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: gravidadeOn
       value: 

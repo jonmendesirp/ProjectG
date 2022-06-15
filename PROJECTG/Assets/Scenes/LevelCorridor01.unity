@@ -22016,6 +22016,7 @@ GameObject:
   - component: {fileID: 1564867480}
   - component: {fileID: 1564867479}
   - component: {fileID: 1564867481}
+  - component: {fileID: 1564867482}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -22064,6 +22065,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endLevelScript: {fileID: 1726963716}
+--- !u!81 &1564867482
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564867478}
+  m_Enabled: 1
 --- !u!1 &1566300452
 GameObject:
   m_ObjectHideFlags: 0
@@ -25636,6 +25645,11 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!82 &1900435625 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099116450303, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 1058706836}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1913896053
 GameObject:
   m_ObjectHideFlags: 0
@@ -36257,6 +36271,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: apanha
+      value: 
+      objectReference: {fileID: 1900435625}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: gravidadeOn
       value: 
