@@ -15131,17 +15131,9 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 1979907016}
   m_IsSelectable: 1
-  m_SelectedFaces: 02000000
-  m_SelectedEdges:
-  - a: 8
-    b: 9
-  - a: 10
-    b: 8
-  - a: 9
-    b: 11
-  - a: 11
-    b: 10
-  m_SelectedVertices: 08000000090000000a0000000b000000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &648046607
 Transform:
   m_ObjectHideFlags: 0
@@ -24190,6 +24182,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!82 &1384427851 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329098142857438, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 3321329098138182822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1403896250
 GameObject:
   m_ObjectHideFlags: 0
@@ -24781,7 +24778,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-76258
+  m_Name: pb_Mesh-2916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -64054,6 +64051,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1783508938}
     m_Modifications:
+    - target: {fileID: 4570155426995332034, guid: 3caa01d9b53eac142be636cd82246697, type: 3}
+      propertyPath: vitoria
+      value: 
+      objectReference: {fileID: 1384427851}
     - target: {fileID: 4570155426995332034, guid: 3caa01d9b53eac142be636cd82246697, type: 3}
       propertyPath: playerScript
       value: 

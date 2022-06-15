@@ -11,6 +11,8 @@ public class EndLevel : MonoBehaviour
     public Text levelCompleteText;
     public bool levelComplete;
 
+    public AudioSource vitoria;
+
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -35,6 +37,7 @@ public class EndLevel : MonoBehaviour
             playerScript.cameraSwitch.controlScheme = 0;
             levelCompleteText.gameObject.SetActive(true);
             levelComplete = true;
+            vitoria.Play();
         }
     }
 }

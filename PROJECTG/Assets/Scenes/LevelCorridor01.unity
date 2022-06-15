@@ -656,7 +656,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-58720
+  m_Name: pb_Mesh-25708
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9754,6 +9754,10 @@ PrefabInstance:
       value: 0.026
       objectReference: {fileID: 0}
     - target: {fileID: 3361055110043231758, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
+      propertyPath: vitoria
+      value: 
+      objectReference: {fileID: 1058706839}
+    - target: {fileID: 3361055110043231758, guid: 4da0172bf2819c6448f8f88eef25564e, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1759169849}
@@ -13319,6 +13323,11 @@ AudioSource:
 --- !u!82 &1058706838 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3321329097322121061, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 1058706836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1058706839 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329098142857438, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
   m_PrefabInstance: {fileID: 1058706836}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &1070610906
