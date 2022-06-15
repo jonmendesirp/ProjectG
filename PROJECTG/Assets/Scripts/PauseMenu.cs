@@ -7,10 +7,19 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool isGamePaused = false;
 
+    Player playerScript;
+    EndLevel endLevelScript;
+
     [SerializeField] GameObject pauseMenu;
+    
+    void Start(){
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        endLevelScript = GameObject.FindGameObjectWithTag("Final").GetComponent<EndLevel>();
+    }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !playerScript.isDead && !endLevelScript.levelComplete)
         {
             if (isGamePaused)
             {
@@ -39,7 +48,7 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Menu"); // METER NR SCENE QUE É O MENU
+        SceneManager.LoadScene("Menu"); // METER NR SCENE QUE ï¿½ O MENU
     }
 
     public void QuitGame()

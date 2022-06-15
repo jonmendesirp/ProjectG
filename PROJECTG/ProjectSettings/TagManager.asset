@@ -19,6 +19,7 @@ TagManager:
   - End Trigger
   - Ground
   - TutorialCol
+  - Final
   layers:
   - Default
   - TransparentFX
