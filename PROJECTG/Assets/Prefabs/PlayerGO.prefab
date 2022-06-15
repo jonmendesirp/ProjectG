@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8624271033095327934}
+  - component: {fileID: 1040593140}
   m_Layer: 0
   m_Name: PlayerGO
   m_TagString: Untagged
@@ -31,6 +32,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1040593140
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8624271033095327933}
+  m_Enabled: 1
 --- !u!1001 &1302673628209763209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56,15 +65,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b0b0faf150553f4ab6ce232367ac7ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.808968
+      value: -19.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b0b0faf150553f4ab6ce232367ac7ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.89
+      value: -9.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b0b0faf150553f4ab6ce232367ac7ac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.284843
+      value: -19.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0b0b0faf150553f4ab6ce232367ac7ac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -199,3 +208,4 @@ MonoBehaviour:
   keysCounter: 0
   keysTotal: 0
   g: 2
+  isOnArea: 0

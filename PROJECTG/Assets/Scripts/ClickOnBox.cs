@@ -11,6 +11,9 @@ public class ClickOnBox : MonoBehaviour
     private Collider coll;
     public Player playerScript;
 
+    public AudioSource gravityon;
+    public AudioSource gravityoff;
+
     void Start()
     {
         g = 2f;
@@ -57,6 +60,7 @@ public class ClickOnBox : MonoBehaviour
             //print("1entrou em " + objectReverseGravity);
             g=-g;
             objectReverseGravity = true;
+            gravityon.Play();
             //print("1agora o reverse = " + objectReverseGravity);
         }
         else if (objectReverseGravity == true)
@@ -64,6 +68,7 @@ public class ClickOnBox : MonoBehaviour
             //print("2entrou em " + objectReverseGravity);
             g=-g;
             objectReverseGravity = false;
+            gravityoff.Play();
             //print("2agora o reverse = " + objectReverseGravity);
         } 
         
