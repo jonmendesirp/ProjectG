@@ -9,6 +9,7 @@ public class IfDead : MonoBehaviour
 
     public Text gameOverText;
 
+
     void Start(){
         //gameOverText = GameObject.Find("Canvas/Game Over").GetComponent<Text>();
         gameOverText.gameObject.SetActive(false);
