@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public AudioSource gravidadeOn;
     public AudioSource gravidadeOff;
     public AudioSource apanha;
+    public AudioSource morre;
 
     
     Text cooldownText;

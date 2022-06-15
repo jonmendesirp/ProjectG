@@ -9632,6 +9632,7 @@ GameObject:
   - component: {fileID: 225341916}
   - component: {fileID: 225341915}
   - component: {fileID: 225341914}
+  - component: {fileID: 225341919}
   m_Layer: 0
   m_Name: BoundUp
   m_TagString: Death
@@ -9730,6 +9731,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &225341919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225341913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5a0b19cc32c344ea7106c825b0ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  morre: {fileID: 1463749674}
 --- !u!4 &225341920
 Transform:
   m_ObjectHideFlags: 0
@@ -25264,6 +25278,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!82 &1463749674 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099292677339, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 3321329098138182822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1482710300
 Mesh:
   m_ObjectHideFlags: 0
@@ -56234,6 +56253,7 @@ GameObject:
   - component: {fileID: 1729539317}
   - component: {fileID: 1729539323}
   - component: {fileID: 1729539322}
+  - component: {fileID: 1729539320}
   m_Layer: 0
   m_Name: BoundDown
   m_TagString: Death
@@ -56303,6 +56323,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1729539320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729539316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5a0b19cc32c344ea7106c825b0ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  morre: {fileID: 1463749674}
 --- !u!4 &1729539321
 Transform:
   m_ObjectHideFlags: 0
@@ -64348,6 +64381,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: morre
+      value: 
+      objectReference: {fileID: 1463749674}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: apanha
       value: 
