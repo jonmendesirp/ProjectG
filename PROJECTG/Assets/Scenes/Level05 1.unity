@@ -16052,6 +16052,10 @@ MonoBehaviour:
   keysTotal: 0
   g: 2
   isOnArea: 0
+  gravidadeOn: {fileID: 0}
+  gravidadeOff: {fileID: 0}
+  apanha: {fileID: 0}
+  portaAbre: {fileID: 0}
 --- !u!95 &981037695
 Animator:
   serializedVersion: 3
