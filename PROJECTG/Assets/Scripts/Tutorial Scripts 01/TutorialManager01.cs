@@ -12,8 +12,9 @@ public class TutorialManager01 : MonoBehaviour
     public GameObject cone;
     public Cone01 coneScript;
     public TriggerScriptTUT01 trgScript;
+    private bool aux = true;
     Player playerScript;
-    
+
     void Start(){
         playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         popUps[0].SetActive(true);
@@ -35,8 +36,12 @@ public class TutorialManager01 : MonoBehaviour
                 cone.gameObject.SetActive(false);
                 popUpIndex++;
             }
-            Instantiate(keys[0], keysPos1, Quaternion.identity);
-            Instantiate(keys[1], keysPos2, Quaternion.identity);
+            if(aux){
+                Instantiate(keys[0], keysPos1, Quaternion.identity);
+                Instantiate(keys[1], keysPos2, Quaternion.identity);
+                aux = !aux;
+            }
+            
         }
         else if (popUpIndex == 2){
             popUps[popUpIndex].SetActive(true);

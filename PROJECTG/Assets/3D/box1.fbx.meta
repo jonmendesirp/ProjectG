@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Box_Mat
-    second: {fileID: 2100000, guid: 3d9494b208fb1b44fae632b8ddb2be0e, type: 2}
+    second: {fileID: 2100000, guid: a5175d7d655897149a415bfbd844c4bd, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Uvs_BOX
-    second: {fileID: 2800000, guid: 6fbd90e9d81c456409eb3ff38a9ca3c6, type: 3}
+    second: {fileID: 2800000, guid: e9f7dbfbcfba9fe45b8758b94e7affd8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
