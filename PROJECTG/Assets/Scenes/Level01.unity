@@ -1323,7 +1323,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh226896
+  m_Name: pb_Mesh165672
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9752,7 +9752,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225341913}
   m_LocalRotation: {x: 0.7069707, y: -0, z: -0, w: 0.70724285}
-  m_LocalPosition: {x: -31.338, y: 25.016, z: -45.045}
+  m_LocalPosition: {x: -31.338, y: 32.17, z: -45.045}
   m_LocalScale: {x: 4.134, y: 10.1206255, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23415,7 +23415,7 @@ MeshCollider:
   m_GameObject: {fileID: 1377282143}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -24042,9 +24042,17 @@ MonoBehaviour:
   assetGuid: 
   m_Mesh: {fileID: 86560099}
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 04000000
+  m_SelectedEdges:
+  - a: 16
+    b: 17
+  - a: 18
+    b: 16
+  - a: 17
+    b: 19
+  - a: 19
+    b: 18
+  m_SelectedVertices: 10000000110000001200000013000000
 --- !u!43 &1381177392
 Mesh:
   m_ObjectHideFlags: 0
@@ -56357,7 +56365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729539316}
   m_LocalRotation: {x: 0.7069707, y: -0, z: -0, w: 0.70724285}
-  m_LocalPosition: {x: -58.474, y: -16.809, z: -29.401}
+  m_LocalPosition: {x: -58.474, y: -4.4, z: -29.4}
   m_LocalScale: {x: 6.8473864, y: 8.758889, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
