@@ -535,7 +535,10 @@ public class Player : MonoBehaviour
     }
 
     void OnTriggerExit(Collider other){
-            isOnArea = false;
+            if(other.gameObject.tag == "Area"){
+                isOnArea = false;
+            }
+            
     }
 
     IEnumerator WaitToSetJumpAsFalse()
