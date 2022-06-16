@@ -1189,6 +1189,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 380231105372814553, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
+      propertyPath: back
+      value: 
+      objectReference: {fileID: 814796927}
+    - target: {fileID: 380231105372814553, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
+      propertyPath: foward
+      value: 
+      objectReference: {fileID: 1979123571}
     - target: {fileID: 1564317239815947345, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2962,6 +2970,7 @@ GameObject:
   - component: {fileID: 225341916}
   - component: {fileID: 225341915}
   - component: {fileID: 225341914}
+  - component: {fileID: 225341919}
   m_Layer: 0
   m_Name: BoundUp
   m_TagString: Death
@@ -3060,6 +3069,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &225341919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225341913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5a0b19cc32c344ea7106c825b0ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  morre: {fileID: 276201131}
 --- !u!4 &225341920
 Transform:
   m_ObjectHideFlags: 0
@@ -4902,6 +4924,21 @@ AudioSource:
 --- !u!82 &276201129 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3321329098142857438, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 276201126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &276201130 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329097940570690, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 276201126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &276201131 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099292677339, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 276201126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &276201132 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099209848061, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
   m_PrefabInstance: {fileID: 276201126}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &278644679
@@ -10349,6 +10386,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371913310}
     m_Modifications:
+    - target: {fileID: -5315444266209726259, guid: b81cfb5f8c8f638489125bbee337217f, type: 3}
+      propertyPath: ativado
+      value: 
+      objectReference: {fileID: 276201132}
     - target: {fileID: 3825979280389449893, guid: b81cfb5f8c8f638489125bbee337217f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -22068,6 +22109,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8885731895297163002, guid: e53082bcf1aa42244939c5b1a094b8cd, type: 3}
   m_PrefabInstance: {fileID: 170787579}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &814796927 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329097456941965, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 276201126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &824340365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33096,6 +33142,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371913310}
     m_Modifications:
+    - target: {fileID: -5315444266209726259, guid: b81cfb5f8c8f638489125bbee337217f, type: 3}
+      propertyPath: ativado
+      value: 
+      objectReference: {fileID: 276201132}
     - target: {fileID: 3825979280389449893, guid: b81cfb5f8c8f638489125bbee337217f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -36081,6 +36131,7 @@ GameObject:
   - component: {fileID: 1729539317}
   - component: {fileID: 1729539323}
   - component: {fileID: 1729539322}
+  - component: {fileID: 1729539320}
   m_Layer: 0
   m_Name: BoundDown
   m_TagString: Death
@@ -36150,6 +36201,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1729539320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729539316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5a0b19cc32c344ea7106c825b0ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  morre: {fileID: 276201131}
 --- !u!4 &1729539321
 Transform:
   m_ObjectHideFlags: 0
@@ -44481,6 +44545,14 @@ PrefabInstance:
       propertyPath: m_EffectColor.r
       value: 0.21568628
       objectReference: {fileID: 0}
+    - target: {fileID: 3550882490331049407, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6f84a400c68812c4f9cb4da1ce144eaf, type: 3}
+    - target: {fileID: 3550882490331049407, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3550882490333439782, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
       propertyPath: m_EffectColor.a
       value: 0.88235295
@@ -44609,6 +44681,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7568587179062932904, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6f84a400c68812c4f9cb4da1ce144eaf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
 --- !u!1 &1932450057 stripped
@@ -44655,6 +44731,11 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5733146033636957689, guid: 20099270c37355047bfba09a96a2c7ff, type: 3}
   m_PrefabInstance: {fileID: 8554804315549508585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1979123571 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329098110226380, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 276201126}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1982316685 stripped
 GameObject:
@@ -54869,6 +54950,10 @@ PrefabInstance:
       propertyPath: apanha
       value: 
       objectReference: {fileID: 381264733}
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: portaAbre
+      value: 
+      objectReference: {fileID: 276201130}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: gravidadeOn
       value: 

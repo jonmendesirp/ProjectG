@@ -7,6 +7,9 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool isGamePaused = false;
 
+    public AudioSource back;
+    public AudioSource foward;
+
     Player playerScript;
     EndLevel endLevelScript;
 
@@ -24,10 +27,12 @@ public class PauseMenu : MonoBehaviour
             if (isGamePaused)
             {
                 ResumeGame();
+                foward.Play();
             }
             else
             {
                 PauseGame();
+                back.Play();
             }
         }
     }

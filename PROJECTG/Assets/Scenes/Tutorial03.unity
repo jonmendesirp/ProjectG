@@ -647,6 +647,14 @@ PrefabInstance:
       propertyPath: m_EffectColor.r
       value: 0.21568628
       objectReference: {fileID: 0}
+    - target: {fileID: 3550882490331049407, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6f84a400c68812c4f9cb4da1ce144eaf, type: 3}
+    - target: {fileID: 3550882490331049407, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3550882490333439782, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
       propertyPath: m_EffectColor.a
       value: 0.88235295
@@ -775,6 +783,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7568587179062932904, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6f84a400c68812c4f9cb4da1ce144eaf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
 --- !u!1 &161107789
@@ -3723,7 +3735,7 @@ MonoBehaviour:
   gravidadeOn: {fileID: 745578838}
   gravidadeOff: {fileID: 1304454581}
   apanha: {fileID: 1756803660}
-  portaAbre: {fileID: 0}
+  portaAbre: {fileID: 1756803662}
 --- !u!95 &878802533
 Animator:
   serializedVersion: 3
@@ -3768,6 +3780,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 380231105372814553, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
+      propertyPath: back
+      value: 
+      objectReference: {fileID: 1756803663}
+    - target: {fileID: 380231105372814553, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
+      propertyPath: foward
+      value: 
+      objectReference: {fileID: 1756803661}
     - target: {fileID: 3262326478929235706, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
       propertyPath: m_Name
       value: Canvas (pausa)
@@ -8147,6 +8167,21 @@ AudioSource:
 --- !u!82 &1756803660 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 3321329099116450303, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 1756803658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1756803661 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329098110226380, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 1756803658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1756803662 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329097940570690, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 1756803658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1756803663 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329097456941965, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
   m_PrefabInstance: {fileID: 1756803658}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &1874989366

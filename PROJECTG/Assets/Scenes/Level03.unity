@@ -6367,6 +6367,7 @@ GameObject:
   - component: {fileID: 225341916}
   - component: {fileID: 225341915}
   - component: {fileID: 225341914}
+  - component: {fileID: 225341919}
   m_Layer: 0
   m_Name: BoundUp
   m_TagString: Death
@@ -6465,6 +6466,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &225341919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225341913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5a0b19cc32c344ea7106c825b0ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  morre: {fileID: 980596529}
 --- !u!4 &225341920
 Transform:
   m_ObjectHideFlags: 0
@@ -17994,6 +18008,31 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 3321329099116450303, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
   m_PrefabInstance: {fileID: 980596518}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &980596525 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329098110226380, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 980596518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &980596526 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329097456941965, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 980596518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &980596527 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329097940570690, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 980596518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &980596528 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099209848061, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 980596518}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &980596529 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3321329099292677339, guid: a6f4025321fbe4a4bafcfb4598153eb8, type: 3}
+  m_PrefabInstance: {fileID: 980596518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &992635732
 GameObject:
   m_ObjectHideFlags: 0
@@ -20736,6 +20775,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1322116629}
+    - target: {fileID: 1174438524345935167, guid: 5ebcc55a47c125b4fa4d6490654a69d1, type: 3}
+      propertyPath: ativado
+      value: 
+      objectReference: {fileID: 980596528}
+    - target: {fileID: 1174438524721526270, guid: 5ebcc55a47c125b4fa4d6490654a69d1, type: 3}
+      propertyPath: ativado
+      value: 
+      objectReference: {fileID: 980596528}
     - target: {fileID: 1400432454570671445, guid: 5ebcc55a47c125b4fa4d6490654a69d1, type: 3}
       propertyPath: m_Size.y
       value: 6.29
@@ -28775,6 +28822,7 @@ GameObject:
   - component: {fileID: 1729539317}
   - component: {fileID: 1729539323}
   - component: {fileID: 1729539322}
+  - component: {fileID: 1729539320}
   m_Layer: 0
   m_Name: BoundDown
   m_TagString: Death
@@ -28844,6 +28892,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1729539320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729539316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be5a0b19cc32c344ea7106c825b0ba09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  morre: {fileID: 980596529}
 --- !u!4 &1729539321
 Transform:
   m_ObjectHideFlags: 0
@@ -32786,6 +32847,14 @@ PrefabInstance:
       propertyPath: m_EffectColor.r
       value: 0.21568628
       objectReference: {fileID: 0}
+    - target: {fileID: 3550882490331049407, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6f84a400c68812c4f9cb4da1ce144eaf, type: 3}
+    - target: {fileID: 3550882490331049407, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3550882490333439782, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
       propertyPath: m_EffectColor.a
       value: 0.88235295
@@ -32922,6 +32991,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 7.7299805
       objectReference: {fileID: 0}
+    - target: {fileID: 7568587179062932904, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 6f84a400c68812c4f9cb4da1ce144eaf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10632de58d020584b9d48ba0b7ce06d1, type: 3}
 --- !u!114 &1932450057 stripped
@@ -35307,6 +35380,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 380231105372814553, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
+      propertyPath: back
+      value: 
+      objectReference: {fileID: 980596526}
+    - target: {fileID: 380231105372814553, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
+      propertyPath: foward
+      value: 
+      objectReference: {fileID: 980596525}
     - target: {fileID: 3262326478929235706, guid: c5b8efdaf6faf5d4db2d9ba8805157ec, type: 3}
       propertyPath: m_Name
       value: Canvas (pausa)
@@ -37878,6 +37959,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 502522300}
+    - target: {fileID: 1174438524345935167, guid: 5ebcc55a47c125b4fa4d6490654a69d1, type: 3}
+      propertyPath: ativado
+      value: 
+      objectReference: {fileID: 980596528}
+    - target: {fileID: 1174438524721526270, guid: 5ebcc55a47c125b4fa4d6490654a69d1, type: 3}
+      propertyPath: ativado
+      value: 
+      objectReference: {fileID: 980596528}
     - target: {fileID: 1641738102532087371, guid: 5ebcc55a47c125b4fa4d6490654a69d1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -38214,6 +38303,10 @@ PrefabInstance:
       propertyPath: apanha
       value: 
       objectReference: {fileID: 980596524}
+    - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
+      propertyPath: portaAbre
+      value: 
+      objectReference: {fileID: 980596527}
     - target: {fileID: 7752871517725967957, guid: fc57c19b99ce8b542987c1b943e9a9d4, type: 3}
       propertyPath: gravidadeOn
       value: 
