@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     public AudioSource apanha;
     public AudioSource portaAbre;
 
-    
+    Text scoreText;
     Text cooldownText;
     Text keysText;
     Text coolText;
@@ -36,9 +36,9 @@ public class Player : MonoBehaviour
     Quaternion normalRotation;
     Quaternion reverseRotation;
 
-
+    private int score = 0;
     private float nextUseGravityTime = 0;
-     private float staticCooldownTime;
+    private float staticCooldownTime;
     private float timeRemaining;
     private float startTime;
     private float rotationSpeed = 720;
@@ -55,6 +55,8 @@ public class Player : MonoBehaviour
 
         //cooldownText = GameObject.Find("Canvas/Gravity Text").GetComponent<Text>();
         keysText = GameObject.Find("Canvas/Keys").GetComponent<Text>();
+        scoreText = GameObject.Find("Canvas/Score").GetComponent<Text>();
+        scoreText.text = "Score: " + score;
 
         OnCool = GameObject.Find("Canvas/OnCool");
         UseGrav = GameObject.Find("Canvas/UseGrav");
@@ -489,6 +491,8 @@ public class Player : MonoBehaviour
             keysText.text = $"Keys: {keysCounter}/" + keysTotal;
             other.gameObject.SetActive(false);
             apanha.Play();
+            score += 10;
+            scoreText.text = "Score: " + score;
         }
 
         if (other.gameObject.tag == "Area") //Area
@@ -501,24 +505,32 @@ public class Player : MonoBehaviour
             cameraSwitch.cam1Active = true;
             other.gameObject.SetActive(false);
             apanha.Play();
+            score += 5;
+            scoreText.text = "Score: " + score;
         }
         else if (other.gameObject.tag == "Camera2")
         {
             cameraSwitch.cam2Active = true;
             other.gameObject.SetActive(false);
             apanha.Play();
+            score += 5;
+            scoreText.text = "Score: " + score;
         }
         else if (other.gameObject.tag == "Camera3")
         {
             cameraSwitch.cam3Active = true;
             other.gameObject.SetActive(false);
             apanha.Play();
+            score += 5;
+            scoreText.text = "Score: " + score;
         }
         else if (other.gameObject.tag == "Camera4")
         {
             cameraSwitch.cam4Active = true;
             other.gameObject.SetActive(false);
             apanha.Play();
+            score += 5;
+            scoreText.text = "Score: " + score;
         }
     }
 

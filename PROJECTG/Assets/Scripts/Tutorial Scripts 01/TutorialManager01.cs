@@ -5,6 +5,9 @@ using UnityEngine;
 public class TutorialManager01 : MonoBehaviour
 {
     public GameObject[] popUps;
+    public GameObject[] keys;
+    private Vector3 keysPos1 = new Vector3(17.3500004f,1.36000001f,-56.9269333f);
+    private Vector3 keysPos2 = new Vector3(17.3500004f,1.36000001f,-52.2000008f);
     private int popUpIndex;
     public GameObject cone;
     public Cone01 coneScript;
@@ -32,6 +35,8 @@ public class TutorialManager01 : MonoBehaviour
                 cone.gameObject.SetActive(false);
                 popUpIndex++;
             }
+            Instantiate(keys[0], keysPos1, Quaternion.identity);
+            Instantiate(keys[1], keysPos2, Quaternion.identity);
         }
         else if (popUpIndex == 2){
             popUps[popUpIndex].SetActive(true);
