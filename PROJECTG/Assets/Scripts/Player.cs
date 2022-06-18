@@ -26,7 +26,8 @@ public class Player : MonoBehaviour
     public AudioSource apanha;
     public AudioSource portaAbre;
 
-    private bool isDoorOpenOnce = false;
+    private bool victory = false;
+
 
     Text scoreText;
     Text cooldownText;
@@ -55,7 +56,6 @@ public class Player : MonoBehaviour
 
         keysTotal = GameObject.FindGameObjectsWithTag("Key").Length;       
 
-        //cooldownText = GameObject.Find("Canvas/Gravity Text").GetComponent<Text>();
         keysText = GameObject.Find("Canvas/Keys").GetComponent<Text>();
         scoreText = GameObject.Find("Canvas/Score").GetComponent<Text>();
         scoreText.text = "Score: " + score;
@@ -64,7 +64,6 @@ public class Player : MonoBehaviour
         OnCool = GameObject.Find("Canvas/OnCool");
         UseGrav = GameObject.Find("Canvas/UseGrav");
         coolText = GameObject.Find("Canvas/coolText").GetComponent<Text>();
-        //cooldownText.text = "Use Gravity";
 
         staticCooldownTime = cooldownTime;
         timeRemaining = staticCooldownTime;
@@ -137,7 +136,6 @@ public class Player : MonoBehaviour
         if (keysCounter == keysTotal)
         {
             allKeysColected = true;
-            isDoorOpenOnce = true;
         }
 
         
@@ -480,14 +478,14 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Death" && !isDead) //Death
+        if (other.gameObject.tag == "Death" && !isDead && !victory) //Death
         {
             //print("Game Over");
             cameraSwitch.controlScheme = 0; //lock the controls
             isDead = true;
         }
 
-        else if (other.gameObject.tag == "Enemy" && !isDead)
+        else if (other.gameObject.tag == "Enemy" && !isDead && !victory)
         {
             cameraSwitch.controlScheme = 0;
             isDead = true;
@@ -506,6 +504,12 @@ public class Player : MonoBehaviour
                 portaAbre.Play();
             }
         }
+        
+        if(other.gameObject.tag == "Final")
+            {
+                controlador.SetBool("Sugado", true);
+                victory = true;
+            }
 
         if (other.gameObject.tag == "Area") //Area
         {
