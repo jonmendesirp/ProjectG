@@ -107,6 +107,7 @@ public class Player : MonoBehaviour
             }
         }
 
+
         if (Time.time > nextUseGravityTime)
         {
             onCool = false;
