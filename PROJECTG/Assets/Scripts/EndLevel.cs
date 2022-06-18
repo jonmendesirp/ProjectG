@@ -19,7 +19,7 @@ public class EndLevel : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         anim.SetBool("AbrirV2", false);
 
-        portaAbre = GameObject.Find("SoundEffects/Vence").GetComponent<AudioSource>();
+        //portaAbre = GameObject.Find("SoundEffects/Vence").GetComponent<AudioSource>();
         vitoria = GameObject.Find("SoundEffects/Vence").GetComponent<AudioSource>();
 
         levelCompleteText.gameObject.SetActive(false);
@@ -32,7 +32,7 @@ public class EndLevel : MonoBehaviour
         if (playerScript.allKeysColected)
         {
             anim.SetBool("AbrirV2", true);
-            portaAbre.Play();
+            //portaAbre.Play();
         }
     }
     void OnTriggerEnter(Collider other)
