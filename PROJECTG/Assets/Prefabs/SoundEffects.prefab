@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 3321329097940570693}
   - component: {fileID: 3321329097940570690}
   m_Layer: 0
-  m_Name: Portal Ativa
+  m_Name: Portal_Ativa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

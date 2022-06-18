@@ -12,11 +12,16 @@ public class EndLevel : MonoBehaviour
     public bool levelComplete;
 
     public AudioSource vitoria;
+    public AudioSource portaAbre;
 
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
         anim.SetBool("AbrirV2", false);
+
+        //portaAbre = GameObject.Find("SoundEffects/Vence").GetComponent<AudioSource>();
+        vitoria = GameObject.Find("SoundEffects/Vence").GetComponent<AudioSource>();
+
         levelCompleteText.gameObject.SetActive(false);
         levelComplete = false;
         levelCompleteText.text = "Level Complete!\n Press ENTER to go to the next level!";
@@ -27,6 +32,7 @@ public class EndLevel : MonoBehaviour
         if (playerScript.allKeysColected)
         {
             anim.SetBool("AbrirV2", true);
+            //portaAbre.Play();
         }
     }
     void OnTriggerEnter(Collider other)
