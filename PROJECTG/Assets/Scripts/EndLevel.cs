@@ -13,7 +13,7 @@ public class EndLevel : MonoBehaviour
     public bool levelComplete;
 
     public AudioSource vitoria;
-    public AudioSource portaAbre;
+   
 
     void Start()
     {
@@ -34,7 +34,6 @@ public class EndLevel : MonoBehaviour
         if (playerScript.allKeysColected)
         {
             anim.SetBool("AbrirV2", true);
-            //portaAbre.Play();
         }
 
         if(levelComplete){
