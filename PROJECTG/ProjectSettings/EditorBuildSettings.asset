@@ -49,7 +49,7 @@ EditorBuildSettings:
     guid: 93889a0fc5dd3cc448ad973329b958f3
   - enabled: 1
     path: Assets/Scenes/LevelFinal.unity
-    guid: 7c68c57db730e01469db5a875a2361e7
+    guid: c666df5f7d6fd4b4e9ff3338b19681f9
   - enabled: 1
     path: Assets/Scenes/CutsceneFinal.unity
     guid: faae85cd50bb0c14b9abe5cad33a2532
