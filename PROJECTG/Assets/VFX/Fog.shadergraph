@@ -2410,7 +2410,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "d81a2604d1fb4b9d94569a967e5b2a8f",
     "m_Id": 0,
-    "m_DisplayName": "Vector2",
+    "m_DisplayName": "Fog Offect",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
