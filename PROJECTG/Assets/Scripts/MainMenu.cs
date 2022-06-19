@@ -5,14 +5,14 @@ using UnityEngine.SceneManagement; // chamar o Scene Management pra poder passar
 
 public class MainMenu : MonoBehaviour
 {
-    public void LoadScene(string sceneName) //chamou-se PlayGame numa de começar o jogo, mas it's up to you
+    public void LoadScene(string sceneName) //chamou-se PlayGame numa de comeï¿½ar o jogo, mas it's up to you
     {
-        SceneManager.LoadScene(sceneName); //meter entre as aspas o nome da Scene onde o jogo vai começar
+        SceneManager.LoadScene(sceneName); //meter entre as aspas o nome da Scene onde o jogo vai comeï¿½ar
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quit");
+        //Debug.Log("Quit");
         Application.Quit();
     }
 }
