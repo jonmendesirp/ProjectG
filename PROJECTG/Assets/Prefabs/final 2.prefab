@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4841234570808770791, guid: 9fefb0aa068b03e44acc7980df1c7d9e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4841234570808770810, guid: 9fefb0aa068b03e44acc7980df1c7d9e, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -70,6 +74,14 @@ PrefabInstance:
     - target: {fileID: 7189450615902182081, guid: 9fefb0aa068b03e44acc7980df1c7d9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127689841566018239, guid: 9fefb0aa068b03e44acc7980df1c7d9e, type: 3}
+      propertyPath: m_Size.x
+      value: 1.8253007
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127689841566018239, guid: 9fefb0aa068b03e44acc7980df1c7d9e, type: 3}
+      propertyPath: m_Center.x
+      value: -7.2673864
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fefb0aa068b03e44acc7980df1c7d9e, type: 3}

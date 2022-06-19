@@ -99,7 +99,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScript: {fileID: 0}
   levelCompleteText: {fileID: 0}
+  gameOverText: {fileID: 0}
   levelComplete: 0
+  vitoria: {fileID: 0}
+  portaAbre: {fileID: 0}
 --- !u!65 &8127689841566018239
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -111,8 +114,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1251268, y: 9.44, z: 9.57}
-  m_Center: {x: -6.6174726, y: 7.47, z: -5}
+  m_Size: {x: 2.0104656, y: 9.44, z: 9.57}
+  m_Center: {x: -7.1748037, y: 7.47, z: -5}
 --- !u!1 &8007192978218811146
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +237,10 @@ PrefabInstance:
     - target: {fileID: 5656737351622156209, guid: c881ed228f576e9469542e5298966d2c, type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5656737351622156209, guid: c881ed228f576e9469542e5298966d2c, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5656737351622156210, guid: c881ed228f576e9469542e5298966d2c, type: 3}
       propertyPath: m_Mesh
